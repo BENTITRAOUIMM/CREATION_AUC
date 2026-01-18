@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.27d4d6dd.css",
+    "main.js": "/static/js/main.38aa692e.js",
+    "static/js/453.ed2f661d.chunk.js": "/static/js/453.ed2f661d.chunk.js",
+    "static/media/logo_ooredoo.png": "/static/media/logo_ooredoo.d4b3534668da7142ba8e.png",
+    "index.html": "/index.html",
+    "main.27d4d6dd.css.map": "/static/css/main.27d4d6dd.css.map",
+    "main.38aa692e.js.map": "/static/js/main.38aa692e.js.map",
+    "453.ed2f661d.chunk.js.map": "/static/js/453.ed2f661d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.27d4d6dd.css",
+    "static/js/main.38aa692e.js"
+  ]
+}

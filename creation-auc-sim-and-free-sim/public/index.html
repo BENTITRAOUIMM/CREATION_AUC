@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/logo512.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Dark mode script: applique la classe 'dark' avant le rendu -->
+    <script>
+      (function() {
+        const storedTheme = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (storedTheme === 'dark' || (!storedTheme && prefersDark)) {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+      })();
+    </script>
+
+    <!-- Tailwind CSS avec plugins -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <!-- Custom Tailwind overrides -->
+    <style type="text/tailwindcss">
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      .gradient-bg {
+        @apply bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900;
+      }
+      .login-card {
+        @apply bg-white dark:bg-gray-900 rounded-2xl shadow-lg;
+      }
+      .btn-gradient {
+        @apply bg-gradient-to-r from-red-500 via-red-600 to-red-500 text-white transition-all duration-500;
+      }
+      .btn-gradient:hover {
+        @apply bg-right-center;
+      }
+    </style>
+
+    <title>AUC Creation & SIM Release</title>
+  </head>
+  <body class="gradient-bg">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>

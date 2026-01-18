@@ -1,0 +1,214 @@
+/* ===== Couleurs ===== */
+:root {
+  --primary: #e60012; /* Rouge Ooredoo */
+  --primary-dark: #ede4e5;
+  --bg-gradient: linear-gradient(135deg, #6c5a5b 0%, #d8caca 100%);
+  --text-muted: #666;
+}
+
+/* ===== Page entière ===== */
+.login-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-gradient);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===== Carte ===== */
+.login-card {
+  background: #fff;
+  padding: 40px 35px;
+  border-radius: 15px;
+  width: 380px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+/* Animation */
+.fade-in {
+  animation: fadeIn 0.8s ease-in-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== Logo ===== */
+.logo {
+  width: 120px;
+  margin-bottom: 15px;
+}
+
+/* ===== Titres ===== */
+.login-title {
+  margin: 0;
+  font-size: 24px;
+  color: var(--primary);
+}
+.login-subtitle {
+  color: var(--text-muted);
+  margin: 8px 0 25px;
+  font-size: 14px;
+}
+
+/* ===== Formulaire ===== */
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+.form-input:focus {
+  border-color: var(--primary);
+  outline: none;
+  box-shadow: 0 0 5px rgba(230,0,18,0.3);
+}
+
+/* ===== Bouton ===== */
+.btn-login {
+  padding: 12px;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.btn-login:hover {
+  background: var(--primary-dark);
+}
+
+/* ===== Messages ===== */
+.alert {
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+.alert-success {
+  background: #e6ffed;
+  color: #2c7a35;
+}
+.alert-danger {
+  background: #ffe6e6;
+  color: #b00020;
+}
+
+/* === HEADER === */
+.aucsim-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 10px 25px;
+  border-radius: 18px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px; /* ✅ espace suffisant sous le header */
+}
+
+.aucsim-logo {
+  height: 55px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.username-text {
+  font-weight: 600;
+  color: #333;
+}
+
+.logout-container {
+  cursor: pointer;
+}
+
+.logout-icon {
+  width: 28px;
+  height: 28px;
+}
+
+/* === OPTIONS === */
+.options-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+/* Cartes plus petites et arrondies */
+.option-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px 30px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 160px; /* ✅ taille contrôlée */
+}
+
+.option-card:hover {
+  transform: scale(1.05);
+  background: #f3f3f3;
+}
+
+.option-card.selected {
+  border: 2px solid #e60000;
+  background-color: #fff4f4;
+}
+
+.option-icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+/* === FORM === */
+.form-card {
+  background: rgb(244, 241, 241);
+  border-radius: 20px;
+  padding: 25px 35px;
+  max-width: 500px;
+  margin: 0 auto 60px auto; /* ✅ bien centré et espacé */
+  box-shadow: 0 2px 8px rgba(246, 244, 244, 0.15);
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #e60000;
+}
+
+.btn-submit {
+  background-color: #e60000;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #cc0000;
+  transform: translateY(-2px);
+}
+
+
+
