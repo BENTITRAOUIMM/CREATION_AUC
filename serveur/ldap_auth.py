@@ -29,7 +29,7 @@ def get_user_type(username, password):
         return 'crm_it_team'
     if 'Digital Factory Group' in user_groups:
         return 'digital_factory'
-    if 'CC BO Activations Group' in user_groups:
+    if 'B2B Activations' in user_groups:
         return 'boa_activations'
     if 'RoamingTeam' in user_groups:
         return 'roaming_team'
